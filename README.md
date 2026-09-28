@@ -113,3 +113,4 @@ checkout → Node.js 22 → テスト → stories走査・検証 → manifest生
 - **deploy失敗：** Settings → PagesのSourceがGitHub Actionsか、Actionsが有効か、Environmentの承認待ちがないか確認します。
 - **404：** 公開URLのリポジトリ名を確認します。ファイルを一段深いフォルダに入れず、package.jsonと.githubをリポジトリ直下に置いてください。
 - **文庫を開けない：** 接続を確認し通常の再読み込みをしてください。表示できなかった本文を「読んだ話」として保存することはありません。
+# hasebe_bunko
