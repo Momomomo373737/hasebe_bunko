@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="長谷部健司との物語を、いつでも最初の一話から。私設電子文庫・長谷部文庫。"><title>長谷部文庫</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%233e5147'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-size='23' fill='%23fff' font-family='serif'%3E文%3C/text%3E%3C/svg%3E">
+<style>body{margin:0;background:#faf9f6;color:#303a33;font-family:serif}#loading{padding:12vh 8vw}a{color:inherit}</style></head><body>
+<div id="root"><p id="loading" role="status">長谷部文庫を開いています…</p></div><noscript>この文庫の閲覧にはJavaScriptを有効にしてください。</noscript>
+<script type="module">
+try {
+ const response=await fetch('./data/current.json?t='+Date.now()+'-'+Math.random(),{cache:'no-store'});
+ if(!response.ok)throw Error('更新情報を取得できませんでした');
+ const current=await response.json();
+ const css=document.createElement('link');css.rel='stylesheet';css.href=current.style;document.head.append(css);
+ const app=await import('./'+current.app);await app.start(current);
+} catch(error){document.getElementById('root').replaceChildren();const p=document.createElement('p');p.id='loading';p.textContent='文庫を開けませんでした。接続を確認して、通常の再読み込みをお試しください。';const a=document.createElement('a');a.href=location.href;a.textContent=' 再読み込み';p.append(a);document.getElementById('root').append(p);console.error(error);}
+</script></body></html>

@@ -1,0 +1,13 @@
+{
+  "name": "hasebe-library",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-manifest.js",
+    "preview": "node scripts/serve.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
