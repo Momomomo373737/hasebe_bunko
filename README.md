@@ -14,6 +14,8 @@
 
 GitHub Pagesは通常、公開URLを知る人が閲覧できます。このサイト自体に閲覧制限はありません。「私設文庫」という表示はアクセス制限を意味しません。利用できるリポジトリの可視性はGitHubのプランによります。
 
+公開ページには検索エンジン向けの `noindex` を設定しています。検索結果への掲載を避けるための指定ですが、URLを知っている人の閲覧を防ぐアクセス制限ではありません。
+
 [GitHub公式：公開元の設定](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
 ## 新しい話を追加
